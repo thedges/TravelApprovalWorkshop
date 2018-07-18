@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the estimated Amount of the expense item</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Expense Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Airfare</fullName>
+                    <default>false</default>
+                    <label>Airfare</label>
+                </value>
+                <value>
+                    <fullName>Hotel</fullName>
+                    <default>false</default>
+                    <label>Hotel</label>
+                </value>
+                <value>
+                    <fullName>Rental car</fullName>
+                    <default>false</default>
+                    <label>Rental car</label>
+                </value>
+                <value>
+                    <fullName>Meals</fullName>
+                    <default>false</default>
+                    <label>Meals</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Travel_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Travel Approval</label>
+        <referenceTo>Travel_Approval__c</referenceTo>
+        <relationshipLabel>Expense Items</relationshipLabel>
+        <relationshipName>Expense_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+</CustomObject>

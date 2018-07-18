@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Department_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The department code related to the department</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the department code</inlineHelpText>
+        <label>Department Code</label>
+        <length>10</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Department_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Department__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Travel Approvals</relationshipLabel>
+        <relationshipName>Travel_Approvals</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Destination_State__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>2-letter abbreviation of destination State</inlineHelpText>
+        <label>Destination State</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Out_of_State__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Out-of-State</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Trip__c</fullName>
+        <description>Description for the purpose of the trip</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a description for the purpose of the trip</inlineHelpText>
+        <label>Purpose of Trip</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Status__c , &apos;Approved&apos;) , IMAGE(&quot;/resource/StatusImages/thumbs-up.png&quot;, &quot;Accepted&quot;, 20, 20), 
+IF ( ISPICKVAL( Status__c , &apos;Rejected&apos;), IMAGE(&quot;/resource/StatusImages/thumbs-down.png&quot;, &quot;Rejected&quot;, 20, 20), 
+IMAGE(&quot;/resource/StatusImages/draft.png&quot;, &quot;In-Process&quot;, 20, 20)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status of the Travel Approval request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The system will set this field automatically based on the stage of the Travel Approval process</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Expenses__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Expenses</label>
+        <summarizedField>Expense_Item__c.Amount__c</summarizedField>
+        <summaryForeignKey>Expense_Item__c.Travel_Approval__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Trip_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trip End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Trip_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The day the trip will begin</inlineHelpText>
+        <label>Trip Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Status__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Trip_Start_Date__c</columns>
+        <columns>Trip_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Approvers_Travel_Approval</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Approvers</label>
+        <queue>Approvers</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Open_Out_of_State_Travel_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Status__c</columns>
+        <columns>Destination_State__c</columns>
+        <columns>Trip_Start_Date__c</columns>
+        <columns>Trip_End_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Out_of_State__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Approved,Rejected</value>
+        </filters>
+        <label>Open Out of State Travel Requests</label>
+    </listViews>
+    <validationRules>
+        <fullName>Trip_end_date_after_start_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Trip_End_Date__c &lt;  Trip_Start_Date__c</errorConditionFormula>
+        <errorDisplayField>Trip_End_Date__c</errorDisplayField>
+        <errorMessage>Trip end date must be greater than or equal to start date</errorMessage>
+    </validationRules>
+</CustomObject>
