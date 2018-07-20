@@ -60,6 +60,10 @@
         <name>StaticResource</name>
     </types>
     <types>
+        <members>Travel_Approval_Workshop</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
         <members>Travel_Approval__c.Trip_end_date_after_start_date</members>
         <name>ValidationRule</name>
     </types>
