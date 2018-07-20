@@ -25,6 +25,11 @@
         <name>Dashboard</name>
     </types>
     <types>
+        <members>Travel_App_UtilityBar</members>
+        <members>Travel_Approval_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>Department__c-Department Layout</members>
         <members>Expense_Item__c-Expense Item Layout</members>
         <members>Travel_Approval__c-Travel Approval Layout</members>
