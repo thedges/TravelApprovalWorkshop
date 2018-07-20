@@ -42,7 +42,6 @@
     <types>
         <members>Department__c.All</members>
         <members>Travel_Approval__c.All</members>
-        <members>Travel_Approval__c.Approvers_Travel_Approval</members>
         <members>Travel_Approval__c.Open_Out_of_State_Travel_Requests</members>
         <name>ListView</name>
     </types>
