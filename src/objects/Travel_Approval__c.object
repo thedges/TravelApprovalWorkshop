@@ -212,15 +212,6 @@ IMAGE(&quot;/resource/StatusImages/draft.png&quot;, &quot;In-Process&quot;, 20, 
         <label>All</label>
     </listViews>
     <listViews>
-        <fullName>Approvers_Travel_Approval</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Approvers</label>
-        <queue>Approvers</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Open_Out_of_State_Travel_Requests</fullName>
         <columns>NAME</columns>
         <columns>Department__c</columns>
