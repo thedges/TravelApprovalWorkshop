@@ -214,8 +214,8 @@ IMAGE(&quot;/resource/StatusImages/draft.png&quot;, &quot;In-Process&quot;, 20, 
     <listViews>
         <fullName>Approvers_Travel_Approval</fullName>
         <filterScope>Queue</filterScope>
-        <label>Approvers</label>
-        <queue>Approvers</queue>
+        <label>TravelCoordinatorQueue</label>
+        <queue>TravelCoordinatorQueue</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

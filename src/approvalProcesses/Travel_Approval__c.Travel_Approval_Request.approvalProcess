@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -30,8 +30,8 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>thedges@summer17.workshop</name>
-                <type>user</type>
+                <name>TravelCoordinatorQueue</name>
+                <type>queue</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>

@@ -47,6 +47,10 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>TravelCoordinatorQueue</members>
+        <name>Queue</name>
+    </types>
+    <types>
         <members>unfiled$public</members>
         <members>unfiled$public/Travel_Requests_by_Department</members>
         <members>unfiled$public/Travel_Requests_by_Month</members>
