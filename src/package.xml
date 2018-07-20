@@ -5,6 +5,10 @@
         <name>ApprovalProcess</name>
     </types>
     <types>
+        <members>travel1</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
         <members>Travel_App</members>
         <name>CustomApplication</name>
     </types>
