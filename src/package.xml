@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>TravelCoordinatorQueue</members>
+        <name>Queue</name>
+    </types>
+    <types>
         <members>Travel_Approval__c.Travel_Approval_Request</members>
         <name>ApprovalProcess</name>
     </types>
@@ -45,10 +49,7 @@
         <members>Travel_Approval__c.Open_Out_of_State_Travel_Requests</members>
         <name>ListView</name>
     </types>
-    <types>
-        <members>TravelCoordinatorQueue</members>
-        <name>Queue</name>
-    </types>
+
     <types>
         <members>unfiled$public/Travel_Requests_by_Department</members>
         <members>unfiled$public/Travel_Requests_by_Month</members>
