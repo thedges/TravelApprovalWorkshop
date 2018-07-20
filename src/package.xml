@@ -9,20 +9,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>Department__c.Department_Code__c</members>
-        <members>Expense_Item__c.Amount__c</members>
-        <members>Expense_Item__c.Expense_Type__c</members>
-        <members>Expense_Item__c.Travel_Approval__c</members>
-        <members>Travel_Approval__c.Department__c</members>
-        <members>Travel_Approval__c.Destination_State__c</members>
-        <members>Travel_Approval__c.Out_of_State__c</members>
-        <members>Travel_Approval__c.Purpose_of_Trip__c</members>
-        <members>Travel_Approval__c.Status_Indicator__c</members>
-        <members>Travel_Approval__c.Status__c</members>
-        <members>Travel_Approval__c.Total_Expenses__c</members>
-        <members>Travel_Approval__c.Trip_End_Date__c</members>
-        <members>Travel_Approval__c.Trip_Start_Date__c</members>
-        <name>CustomField</name>
+        <members>Department__c</members>
+        <members>Expense_Item__c</members>
+        <members>Travel_Approval__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>Department__c</members>
