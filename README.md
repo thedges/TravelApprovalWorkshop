@@ -1,4 +1,6 @@
 # TravelApprovalWorkshop
+THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
+
 Package of completed Travel Approval workshop. Use to install completed workshop in to a new org.
 
 Post package installation steps:
